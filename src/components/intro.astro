@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="How Many Satellites are in Space?" id="intro">
+  <Icon slot="eyebrow" name="mdi:space-station" class="size-32" />
+  <Fragment slot="lead">
+    the satellite tracking website “Orbiting Now” lists
+    <span class="text-primary">10,313</span> active satellites in various Earth orbits.
+    <span class="text-primary">Low orbits are easier to reach  </span>
+    and have certain advantages for small satellites. <span class="text-primary">Radio signals </span> take much less time to reach LEO than GEO.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://orbit.ing-now.com/#main"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:satellite-uplink" class="size-8" />
+      <span>Orbiting Now</span>
+    </a>
+    <a
+      href="https://www.space.com/24839-satellites.html"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:satellite-variant" class="size-8" />
+      <span>more About Satellites</span>
+    </a>
+  </div>
+</ContentSection>

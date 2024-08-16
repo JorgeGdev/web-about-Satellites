@@ -1,0 +1,81 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const frameworks: Array<CompatibilityItem> = [
+  {
+    title: "USA:	2926",
+    icon: "mdi:rocket",
+    url: "https://www.nasa.gov/",
+  },
+  {
+    title: "China:	493",
+    icon: "mdi:rocket-launch",
+    url: "https://www.cnsa.gov.cn/english/",
+  },
+  {
+    title: "U.K:	450",
+    icon: "mdi:rocket-launch-outline",
+    url: "https://www.gov.uk/government/organisations/uk-space-agency",
+  },
+  {
+    title: "Russia: 167",
+    icon: "mdi:rocket-outline",
+    url: "https://www.iafastro.org/membership/all-members/roscosmos.html",
+  },
+  {
+    title: "Japan:	90",
+    icon: "fa-brands:rocketchat",
+    url: "https://global.jaxa.jp/about/history/nasda/index_e.html",
+  },
+  
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "ESA:	62",
+    icon: "fa-brands:rocketchat",
+    url: "https://www.esa.int/",
+  },
+  {
+    title: "Multinational:	61",
+    icon: "mdi:rocket-outline",
+    url: "https://www.spacex.com/",
+  },
+  {
+    title: "India:	58",
+    icon: "mdi:rocket-launch-outline",
+    url: "https://www.isro.gov.in/",
+  },
+  {
+    title: "Canada:	52",
+    icon: "mdi:rocket-launch",
+    url: "https://www.asc-csa.gc.ca/eng/",
+  },
+  {
+    title: "Germany:	44",
+    icon: "mdi:rocket",
+    url: "https://www.dlr.de/en/ar",
+  },
+  
+];
+---
+
+<ContentSection title="How many countries have satellites in orbit?" id="compatibility">
+  <Fragment slot="lead">
+    Operating <span class="text-primary">satellites</span>are registered in
+    <span class="text-primary">105 countries</span>
+    or multinational organizations. <span class="text-primary">The ten countries </span>with the most operational satellites are:
+  </Fragment>
+  <CompatibilityList
+    items={frameworks}
+    title="Country"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CompatibilityList
+    items={platforms}
+    title="Country"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+</ContentSection>

@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Communications",
+    description:
+      "3.135",
+    icon: "mdi:satellite-variant",
+  },
+  {
+    title: "Earth Observation",
+    description:
+      "	1.052",
+    icon: "mdi:space-invaders",
+  },
+  {
+    title: "Technology Development",
+    description:
+      "383",
+    icon: "mdi:space-station",
+  },
+  {
+    title: "Navigation",
+    description:
+      "154",
+    icon: "mdi:satellite",
+  },
+  {
+    title: "Space Science",
+    description:
+      "	108",
+    icon: "mdi:satellite-uplink",
+  },
+  {
+    title: "StarLink SpaceX",
+    description:
+      "6.100",
+    icon: "mdi:satellite-variant",
+  },
+];
+---
+
+<ContentSection title="What do these satellites do?" id="features">
+  <Fragment slot="lead">
+    Satellites can perform <span class="text-primary">several missions</span>.depending on their payloads.
+    <span class="text-primary">The five</span>
+    most common primary missions include <span class="text-primary">:</span>
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="size-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} class="size-full" />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>
