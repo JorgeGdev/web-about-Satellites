@@ -33,25 +33,25 @@
 .image-character_1 {
     height: 280px;
     width: 250px;
-    background-image: url("./images/dragon1.png");
+    background-image: url(../../public/images/dragon1.png);
 }
 
 .image-character_2 {
     height: 400px;
     width: 320px;
-    background-image: url("./images/falcon9.png");
+    background-image: url(../../public/images/falcon9.png);
 }
 
 .image-character_3 {
     height: 380px;
     width: 350px;
-    background-image: url("./images/falconheavy.png");
+    background-image: url(../../public/images/falconheavy.png);
 }
 
 .image-character_4 {
     height: 350px;
     width: 180px;
-    background-image: url("./images/starship.png");
+    background-image: url(../../public/images/starship.png);
 }
 
 .detail,
@@ -81,7 +81,7 @@
     transform: translateY(-40px);
     transition: 300ms;
     filter: none;
-    background-image: url("./images/dragon2.png");
+    background-image: url(../../public/images/dragon2.png);
     width: 250px;
     height: 230px;
 }
@@ -90,7 +90,7 @@
     transform: translateY(-40px);
     transition: 300ms;
     filter: none;
-    background-image: url("./images/falcon92.png");
+    background-image: url(../../public/images/falcon92.png);
     width: 280px;
     height: 400px;
 }
@@ -99,7 +99,7 @@
     transform: translateY(-40px);
     transition: 300ms;
     filter: none;
-    background-image: url("./images/falconheavy2.png");
+    background-image: url(../../public/images/falconheavy2.png);
     width: 230px;
     height: 280px;
 }
@@ -108,7 +108,7 @@
     transform: translateY(-40px);
     transition: 300ms;
     filter: none;
-    background-image: url("./images/starship1.png");
+    background-image: url(../../public/images/starship1.png);
     width: 380px;
     height: 240px;
 }
