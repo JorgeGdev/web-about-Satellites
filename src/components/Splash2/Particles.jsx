@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { BufferGeometry, BufferAttribute, Vector3, TextureLoader } from 'three';
-import { MeshSurfaceSampler } from 'three/examples/jsm/math/MeshSurfaceSampler';
+import { MeshSurfaceSampler } from './MeshSurfaceSampler.js'
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
 
